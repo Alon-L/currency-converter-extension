@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Default currency: <span class="font-weight-bold" id="defaultCurrency"></span></p>
+    <form id="defaultCurrencyForm">
+        <label for="defaultCurrencySelector">Choose default currency type</label>
+        <select name="default_currency" id="defaultCurrencySelector">
+            <option value="USD">USD (United States Dollar)</option>
+            <option value="GBP">GBP (Pound Sterling)</option>
+            <option value="EUR">EUR (Euros)</option>
+            <option value="ILS">ILS (Israeli Shekel)</option>
+        </select>
+        <button class="submit-button" type="submit">Save Changes</button>
+    </form>
+    <script src="settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+
+  "manifest_version": 2,
+  "name": "Currency Converter",
+  "version": "1.0",
+
+  "author": "Alon Livne",
+  "description": "Convert currency by highlighting a price.",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/icon-48-white.png"
+    },
+    "default_title": "Currency Converter",
+    "default_popup": "src/popup/settings.html"
+  },
+
+  "background": {
+    "scripts": [
+      "index.js",
+      "src/apiKey.js",
+      "src/formatCurrency.js",
+      "src/convertCurrency.js"
+    ]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/createPopup.js"]
+    }
+  ],
+
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "clipboardWrite",
+    "storage"
+  ]
+
+}
