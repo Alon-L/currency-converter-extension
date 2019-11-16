@@ -1,1 +1,4 @@
 .idea
+
+# File containing the API Key
+apiKey.js
