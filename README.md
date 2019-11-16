@@ -5,7 +5,7 @@
 ### About
 This project is my first browser extension. It was made for personal purposes, and therefore, doesn't support too many conversion currencies.
 
-### How to run locally?
+### How to install locally?
 1. Clone the repository.
 2. Achieve an API key from [Currency Convert API](https://www.currencyconverterapi.com/)
 3. Create a new file under `src` called `apiKey.js` with the content:
