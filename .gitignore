@@ -1,4 +1,7 @@
 .idea
 
+# Builds
+web-ext-artifacts
+
 # File containing the API Key
 apiKey.js

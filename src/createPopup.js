@@ -14,7 +14,7 @@ browser.runtime.onMessage.addListener(request => {
       <h3 style="margin: 0;">${request.converted}</h3>
     </div>
   `;
-  popup.style = `transform: translate(-50%, -50%); position: absolute; left: ${x}px; top: ${y}px`;
+  popup.style = `transform: translate(-50%, -50%); position: absolute; left: ${x}px; top: ${y}px; z-index: 10000`;
 
   document.body.appendChild(popup);
 });
