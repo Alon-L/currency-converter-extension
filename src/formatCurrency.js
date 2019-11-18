@@ -26,6 +26,8 @@ const symbols = {
 };
 
 function formatCurrency(text) {
+  text = text.replace(/,/g, '');
+
   let currency = (text
     .match(/[^.0-9]+/g) || ['USD'])
     .join('')

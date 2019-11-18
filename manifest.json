@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Currency Converter",
-  "version": "1.0.2",
+  "version": "1.0.3",
 
   "author": "Alon Livne",
   "description": "Convert currency by highlighting a price.",
